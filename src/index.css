@@ -1,0 +1,299 @@
+:root {
+  --col-Prin: #333333;
+  --light-col: #828282;
+  --blue-col: #2962FF;
+  --red-col: #D32F2F;
+}
+
+.material-symbols-rounded {
+  display: none;
+  font-size: 20px;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container__gral {
+  display: flex;
+  margin-top: 0;
+  column-gap: 8rem;
+  margin-bottom: 0;
+}
+
+
+.container {
+  width: min(95%, 1033px);
+  margin: 3rem auto 0 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.row__icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.row__full {
+  display: block;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.aside__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  width: 236px;
+  height: 170rem;
+  background-color: #FAFBFD;
+  padding-left: 56px;
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #9E9E9E;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.nav {
+  margin-top: 7.9rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #F7542E;
+  font-size: 14px;
+  margin-top: 4rem;
+}
+
+
+.logo span {
+  color: #090F31;
+}
+
+.nav__active {
+  color: #090F31;
+  font-weight: bold;
+}
+
+.title {
+  margin: 0 auto 6.5rem 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #4F4F4F;
+}
+
+.input__name, .input__name-hover {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+  color: var(--col-Prin);
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.input__name-hover {
+  color: var(--light-col);
+}
+
+label {
+    display: block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .4rem;
+}
+
+.lab {
+      color: var(--col-Prin);
+}
+
+.labError {
+  color: var(--red-col);
+}
+
+
+#tel, #lock {
+  display: block;
+  color: var(--light-col);
+}
+
+#tel {
+  margin-top: -3.8rem;
+  margin-left: 1rem;
+
+
+}
+
+#lock {
+  position: relative;
+  margin-left: 16.5rem;
+  margin-top: -3.8rem;
+  margin-right: 1rem;
+  
+}
+
+/* Input General */
+input {
+  padding-left: 1.2rem;
+  border: 1px solid var(--light-col);
+  width: 20rem;
+  height: 5.6rem;
+  border-radius: .8rem;
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+}
+/* Input Standard */
+.input__global:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid var(--blue-col);
+}
+
+
+.inputWithLabel:focus-within label {
+  color: var(--blue-col);
+}
+
+.input__global:hover {
+    border: 1px solid var(--col-Prin);
+}
+
+/* Input Error */
+.input__global-error {
+    border: 1px solid var(--red-col);
+}
+
+
+/* Error inputs */ 
+.input__global-error:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid var(--red-col);
+}
+
+.input__global-error:hover {
+  border: 1px solid var(--col-Prin);
+}
+
+.inputWithLabelError:focus-within label {
+  color: var(--red-col);
+}
+
+.helper {
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--light-col);
+  font-size: 10px;
+  margin-top: .4rem;
+  font-weight: 400;
+}
+
+.inputWithLabelError:focus-within h5 {
+  color: var(--red-col);
+}
+
+/* Input Disabled */
+
+.input__disabled:disabled {
+  background-color: #F2F2F2;
+  border: 1px solid #E0E0E0;
+}
+
+.input__global-error-off{
+  border: 1px solid var(--col-Prin);
+}
+
+.input__global-error-off:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid var(--red-col);   
+}
+
+/* Ipunt with Icon */
+.input__icon-tel {
+  padding-left: 4rem;
+}
+
+.input__icon-tel:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid var(--blue-col);
+}
+
+.input__small {
+  width: 20rem;
+  height: 4rem;
+}
+
+
+.input__full {
+  grid-area: 1 ;
+  width: 100%;
+  
+}
+
+.input__multiline {
+  height: 150px;
+  width: 200px;
+  border-radius: .8rem; 
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+  border: 1px solid var(--light-col);
+  max-width: 200px;
+  max-height: 150px;
+}
+
+footer {
+  width: min(95%, 900px);
+  margin: 20px auto 20px 0;
+}
+
+.footer-text {
+  color: #A9A9A9;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
